@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  tcp_gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tcp_gateway
+    ports:
+      - "8080:8080"
+    networks:
+      - app_network
+    environment:
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    volumes:
+      - ./src/main/resources/config:/app/config
+      - ./src/main/resources/logs:/app/logs
+    depends_on:
+      - redis
+
+  redis:
+    image: redis:alpine
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

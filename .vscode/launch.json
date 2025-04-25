@@ -1,0 +1,12 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "request": "launch",
+            "name": "Run TCP Gateway",
+            "mainClass": "main.java.tcp_gateway.DecryptionWorker",
+            "projectName": "tcp-gateway"
+        }
+    ]
+}

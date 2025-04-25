@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    mavenCentral()
+}
+// repositories {
+//     maven {
+//         url 'https://repo.spring.io/milestone'
+//     }
+//     maven {
+//         url 'https://jcenter.bintray.com/'
+//     }
+// }
+
+
+dependencies {
+    implementation 'redis.clients:jedis:3.9.0'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    implementation 'org.jpos:jPOS:latest.release' // Hoặc version cụ thể
+}
+
+// dependencies {
+//     implementation fileTree(dir: 'lib', include: '*.jar')
+// }
+
