@@ -1,4 +1,4 @@
-package main.java;
+package com.npt;
 import redis.clients.jedis.Jedis;
 import javax.crypto.Cipher;
 import javax.crypto.spec.SecretKeySpec;

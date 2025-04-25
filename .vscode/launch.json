@@ -5,8 +5,19 @@
             "type": "java",
             "request": "launch",
             "name": "Run TCP Gateway",
-            "mainClass": "main.java.tcp_gateway.DecryptionWorker",
-            "projectName": "tcp-gateway"
+            "mainClass": "com.npt.tcp_gateway.DecryptionWorker",
+            "projectName": "tcp-gateway",
+            "classPaths": [
+                "bin",
+                "lib/jedis-3.9.0.jar",
+                "lib/slf4j-api-1.7.36.jar",
+                "lib/logback-classic-1.2.11.jar",
+                "lib/tutorial-3.0.0-SNAPSHOT.jar"
+            ],
+            "env": {
+                "JAVA_HOME": "D:\\WorkSpace\\Java\\jdk-23.0.2",
+                "PATH": "$PATH;D:\\WorkSpace\\Java\\gradle-8.12\\bin;D:\\WorkSpace\\Java\\jdk-23.0.2\\bin"
+            }
         }
     ]
 }

@@ -1,4 +1,4 @@
-package main.java;
+package com.npt;
 import redis.clients.jedis.Jedis;
 import java.io.OutputStream;
 import java.net.Socket;

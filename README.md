@@ -265,4 +265,11 @@ spec:
   maxReplicas: 10
   targetCPUUtilizationPercentage: 70
 ```
+# kích hoạt biến môi trường thủ công
 
+```bash
+$env:PATH += ";D:\WorkSpace\Java\gradle-8.12\bin"
+$env:PATH += ";D:\WorkSpace\Java\jdk-23.0.2\bin"
+$env:JAVA_HOME="D:\WorkSpace\Java\jdk-23.0.2"
+gradle -v
+```

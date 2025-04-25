@@ -9,7 +9,7 @@ target
 out/
 txnmgrtest/
 # Eclipse Ignores
-.classpath
+# .classpath
 .settings
 .project
 # Gradle Ignores
@@ -17,4 +17,4 @@ txnmgrtest/
 build
 .nb-gradle
 # VSCode Ignores
-.vscode/settings.json
+# .vscode/settings.json
